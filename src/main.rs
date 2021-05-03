@@ -1,5 +1,6 @@
 mod ternary;
 mod vectors;
+mod impls;
 
 fn main() {
     println!("Hello, world!");
@@ -23,4 +24,14 @@ fn main() {
     );
 
     println!("Creating a new array of size 10: {:#?}", vectors::create_and_return_vector(10));
+    
+    let player_1 = impls::Player {
+        first_name: "Rafael".to_string(),
+        last_name: "Nadal".to_string(),
+        age: 35
+    };
+    println!("Player: {} with {} years", player_1.full_name(), player_1.age);
 }
+
+
+
