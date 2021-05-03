@@ -12,4 +12,12 @@ fn main() {
     println!("{}", x);
 
     ternary::is_under();
+    println!(
+        "Is under 18 with 15 years: {}",
+        ternary::is_under_with_args(15)
+    );
+    println!(
+        "Is under 18 with 20 years: {}",
+        ternary::is_under_with_args(20)
+    );
 }

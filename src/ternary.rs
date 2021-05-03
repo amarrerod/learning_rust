@@ -5,3 +5,8 @@ pub fn is_under() {
 
     println!("Is under 18: {}", is_under_18);
 }
+
+pub fn is_under_with_args(age: i32) -> bool {
+    let is_under: bool = if age < 18 { true } else { false };
+    is_under
+}
