@@ -1,4 +1,5 @@
 mod ternary;
+mod vectors;
 
 fn main() {
     println!("Hello, world!");
@@ -20,4 +21,6 @@ fn main() {
         "Is under 18 with 20 years: {}",
         ternary::is_under_with_args(20)
     );
+
+    println!("Creating a new array of size 10: {:#?}", vectors::create_and_return_vector(10));
 }
