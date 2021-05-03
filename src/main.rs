@@ -1,4 +1,4 @@
-
+mod ternary;
 
 fn main() {
     println!("Hello, world!");
@@ -10,5 +10,6 @@ fn main() {
 
     let x = format!("{}, {}!", "Hello", "world"); // Cadena formateada
     println!("{}", x);
-    
+
+    ternary::is_under();
 }
